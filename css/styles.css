@@ -114,8 +114,8 @@ main ul li a:hover {
 .container {
     top: 115px;
     left: 120px;
-    width: 545px;
-    height: 500px;
+    width: 546px;
+    height: 501px;
     position: fixed;
     display: flex;
     flex-direction: column;
