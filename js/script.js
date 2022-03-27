@@ -16,10 +16,12 @@ about.addEventListener('click', () => {
         // modal: true,
         width: '400px',
         height: '400px',
-        top: 50,
-        right: 50,
-        bottom: 50,
-        left: 50,
+        x: "center",
+        y: "center",
+        top: 20,
+        right: 20,
+        bottom: 20,
+        left: 20,
         mount: aboutContent,
         onfocus: function () {
             this.setBackground('#00aa00')
@@ -36,10 +38,10 @@ projects.addEventListener('click', () => {
         title: 'My Projects',
         width: '400px',
         height: '400px',
-        top: 150,
-        right: 50,
-        bottom: 50,
-        left: 250,
+        top: 20,
+        right: 20,
+        bottom: 20,
+        left: 20,
         mount: projectsContent,
         onfocus: function () {
             this.setBackground('#00aa00')
@@ -56,10 +58,10 @@ certifications.addEventListener('click', () => {
         title: 'My Certifications',
         width: '400px',
         height: '400px',
-        top: 150,
-        right: 50,
-        bottom: 50,
-        left: 250,
+        top: 20,
+        right: 20,
+        bottom: 20,
+        left: 20,
         mount: certificationsContent,
         onfocus: function () {
             this.setBackground('#00aa00')
@@ -76,10 +78,10 @@ contact.addEventListener('click', () => {
         title: 'Contact Me',
         width: '400px',
         height: '400px',
-        top: 150,
-        right: 50,
-        bottom: 50,
-        left: 250,
+        top: 20,
+        right: 20,
+        bottom: 20,
+        left: 20,
         mount: contactContent,
         onfocus: function () {
             this.setBackground('#00aa00')
