@@ -25,7 +25,7 @@ body {
     background-size: cover;
     background-color: var(--dull-black-color);
     color: var(--dull-white-color);
-    font-size: 1.125rem;
+    font-size: 18px;
     line-height: 1.6;
     width: 100vw;
     height: 100vh;
@@ -33,9 +33,9 @@ body {
 
 h1 {
     color: var(--text-color);
-    font-size: 2.5rem;
-    letter-spacing: -0.313rem;
-    margin-bottom: 1.25rem;
+    font-size: 40px;
+    letter-spacing: -5px;
+    margin-bottom: 20px;
     background-color: var(--black-background-color);
 }
 
@@ -44,7 +44,7 @@ h2 {
 }
 
 h3 {
-    margin-bottom: 0.625rem;
+    margin-bottom: 10px;
     background-color: var(--black-background-color);
 }
 
@@ -58,7 +58,7 @@ a {
 }
 
 p {
-    margin: 1.25rem 0;
+    margin: 20px 0;
 }
 
 nav {
@@ -67,7 +67,7 @@ nav {
     align-items: flex-start;
     width: 100%;
     height: 10%;
-    margin-top: 0.928rem;
+    margin-top: 15px;
     background-color: var(--black-background-color);
 }
 
@@ -78,7 +78,7 @@ nav ul {
 nav ul li {
     color: var(--text-color);
     cursor: pointer;
-    margin: 0 0.625rem;
+    margin: 0 10px;
 }
 
 nav ul li:hover {
@@ -112,32 +112,32 @@ main ul li a:hover {
 
 
 .container {
-    top: 17.5rem;
-    left: 9.375rem;
-    width: 36.313rem;
-    height: 31.313rem;
+    top: 115px;
+    left: 120px;
+    width: 545px;
+    height: 500px;
     position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: var(--black-background-color);
-    border-radius: 1rem;
+    border-radius: 16px;
 }
 
 #video {
-    width: 36.25rem;
-    height: 31.25rem;
+    width: 545px;
+    height: 500px;
     object-fit: cover;
     position: fixed;
     z-index: -1;
-    border-radius: 1rem;
+    border-radius: 15px;
     border: 1px solid var(--bright-text-color);
 }
 
 .wb-body {
     background: var(--black-wb-body-color);
-    padding: 1.25rem;
+    padding: 20px;
 }
 
 .hidden {
@@ -153,10 +153,9 @@ main ul li a:hover {
 .carousel-container {
     display: flex;
     position: fixed;
-    width: 12.5rem;
-    height: 15.625rem;
-    margin-left: 54.063rem;
-    margin-top: 38.60rem;
+    width: 125px;
+    margin-left: 970px;
+    margin-top: 650px;
 }
 
 /* Footer Content */
@@ -170,10 +169,10 @@ main ul li a:hover {
 
 .footer {
     background-color: var(--dull-black-color);
-    padding: 0 1.25rem;
+    padding: 0 20px;
     border: 1px dashed var(--text-color);
-    border-radius: 3.125rem;
-    margin-bottom: 1.25rem;
+    border-radius: 50px;
+    margin-bottom: 20px;
     color: var(--bright-text-color);
 }
 
@@ -186,6 +185,6 @@ main ul li a:hover {
     }
 
     50% {
-        color: var(--bright-text-color);
+        color: var(--text-color);
     }
 }
