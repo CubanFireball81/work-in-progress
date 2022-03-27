@@ -13,9 +13,12 @@
 
 <body>
     <div class="container">
-        <video id="video" autoplay loop infinite controls>
+        <video id="video" muted autoplay loop infinite controls>
             <source src="./assets/videos/matrixVideo.mov" type="video/mp4">
         </video>
+        <script>
+            document.getElementById('video').play();
+        </script>
 
         <nav>
             <ul>
