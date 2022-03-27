@@ -14,8 +14,8 @@ about.addEventListener('click', () => {
     const aboutBox = new WinBox({
         title: 'About Me',
         // modal: true,
-        width: '400px',
-        height: '400px',
+        width: '615px',
+        height: '525px',
         x: "center",
         y: "center",
         top: 20,
@@ -36,8 +36,8 @@ about.addEventListener('click', () => {
 projects.addEventListener('click', () => {
     const projectsBox = new WinBox({
         title: 'My Projects',
-        width: '400px',
-        height: '400px',
+        width: '800px',
+        height: '550px',
         top: 20,
         right: 20,
         bottom: 20,

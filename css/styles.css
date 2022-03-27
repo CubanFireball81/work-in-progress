@@ -9,6 +9,7 @@
 :root {
     --text-color: #00aa00;
     --white-color: #ffffff;
+    --black-color: #000000;
     --dull-white-color: #cccccc;
     --black-background-color: rgba(0, 0, 0, 0.7);
     --green-border-color: rgba(32, 194, 14, 0.6);
@@ -136,8 +137,35 @@ main ul li a:hover {
 }
 
 .wb-body {
-    background: var(--black-wb-body-color);
+    background: var(--black-color);
+    color: var(--text-color);
     padding: 20px;
+}
+
+.links:hover {
+    color: var(--bright-text-color);
+}
+
+
+.projects-list {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.projects-list li:hover {
+    border: 1px solid var(--bright-text-color);
+}
+
+.project {
+    padding: 0 10px;
+}
+
+#pacmen, #bus, #eyes {
+    width: 200px;
+    height: 200px;
 }
 
 .hidden {
