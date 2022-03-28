@@ -25,12 +25,34 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: var(--dull-black-color);
-    color: var(--dull-white-color);
+    background-color: var(--black-color);
     font-size: 18px;
     line-height: 1.6;
     width: 100vw;
     height: 100vh;
+    display: flex;
 }
+
+/* NAVBAR SECTION */
+
+.navbar-container {
+    display: flex;
+    width: 100vw;
+    top: 0;
+    position: fixed;
+    justify-content: center;
+    z-index: 100;
+}
+
+.navbar {
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60%;
+    background-color: var(--black-background-color);
+    position: fixed;
+}
+
+/* THINGS :-) */
 
 h1 {
     color: var(--text-color);
@@ -47,6 +69,7 @@ h2 {
 h3 {
     margin-bottom: 10px;
     background-color: var(--black-background-color);
+    color: var(--white-color);
 }
 
 ul {
@@ -62,19 +85,6 @@ p {
     margin: 20px 0;
 }
 
-nav {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    width: 100%;
-    height: 10%;
-    margin-top: 15px;
-    background-color: var(--black-background-color);
-}
-
-nav ul {
-    display: flex;
-}
 
 nav ul li {
     color: var(--text-color);
@@ -90,9 +100,10 @@ nav ul li:hover {
 
 main {
     display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 90%;
+    position: absolute;
+    /* flex-direction: column; */
+    width: 100vw;
+    height: 100vh;
     align-items: center;
     justify-content: center;
 }
@@ -111,19 +122,35 @@ main ul li a:hover {
     color: var(--bright-text-color)
 }
 
+.screen-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
 
-.container {
-    top: 115px;
-    left: 120px;
+
+.screen {
+    /* top: 115px;
+    left: 120px; */
     width: 546px;
     height: 501px;
-    position: fixed;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: var(--black-background-color);
     border-radius: 16px;
+}
+
+.screen-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
 }
 
 #video {
@@ -140,6 +167,7 @@ main ul li a:hover {
     background: var(--black-color);
     color: var(--text-color);
     padding: 20px;
+    z-index: 99;
 }
 
 .links:hover {
@@ -163,7 +191,9 @@ main ul li a:hover {
     padding: 0 10px;
 }
 
-#pacmen, #bus, #eyes {
+#pacmen,
+#bus,
+#eyes {
     width: 200px;
     height: 200px;
 }
@@ -178,39 +208,44 @@ main ul li a:hover {
 }
 
 /* Bootstrap Carousel */
-.carousel-container {
+/* .carousel-container {
     display: flex;
     position: fixed;
     width: 125px;
     margin-left: 970px;
     margin-top: 650px;
-}
+} */
 
-.profile-img {
+/* .profile-img {
     display: flex;
     position: fixed;
-    width: 215px;
-    height: 285px;
-    margin-left: 1235px;
+    margin-left: 1000px;
     margin-top: 130px;
-    overflow: hidden;
+} */
+
+#my-img {
+    border-radius: 100%;
+    width: 150px;
+    height: auto;
+    
 }
 
 
 /* Footer Content */
-.footer-content {
+.footer-container {
     display: flex;
-    width: auto;
-    height: 100vh;
-    align-items: end;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    align-items: center;
     justify-content: center;
 }
 
 .footer {
     background-color: var(--dull-black-color);
-    padding: 0 20px;
+    padding: 10px;
     border: 1px dashed var(--text-color);
-    border-radius: 50px;
+    border-radius: 10px;
     margin-bottom: 10px;
     color: var(--bright-text-color);
 }
