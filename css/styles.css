@@ -143,6 +143,7 @@ main ul li a:hover {
     align-items: center;
     background-color: var(--black-background-color);
     border-radius: 16px;
+    border: 1px dashed var(--bright-text-color);
 }
 
 .screen-content {
@@ -160,7 +161,6 @@ main ul li a:hover {
     position: fixed;
     z-index: -1;
     border-radius: 15px;
-    border: 1px solid var(--bright-text-color);
 }
 
 .wb-body {
@@ -216,18 +216,19 @@ main ul li a:hover {
     margin-top: 650px;
 } */
 
-/* .profile-img {
+.profile-img {
     display: flex;
-    position: fixed;
-    margin-left: 1000px;
-    margin-top: 130px;
-} */
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    position: relative;
+    margin-top: 30px;
+}
 
 #my-img {
-    border-radius: 100%;
-    width: 150px;
-    height: auto;
-    
+    border-radius: 10%;
+    width: 30%;
+    border: 1.5px dashed var(--bright-text-color);
 }
 
 
@@ -249,6 +250,25 @@ main ul li a:hover {
     margin-bottom: 10px;
     color: var(--bright-text-color);
 }
+
+.social-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socialLogo {
+    max-height: 2rem;
+    transition: transform 0.5s ease-in-out;
+    background-color: black !important;
+    border: 2px solid black;
+    opacity: 0.5;
+}
+
+.socialLogo:hover {
+    transform: scale(-1, 1) scale(1);
+}
+
 
 
 @keyframes blink {
