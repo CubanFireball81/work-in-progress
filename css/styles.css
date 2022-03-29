@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap');
 
+
+
+/* /////////////////////// */
+/* GLOBAL VARIABLES */
+/* ///////////////////// */
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -18,6 +24,11 @@
     --dull-black-color: rgba(0, 0, 0, 0.75);
 }
 
+
+/* ////////////// */
+/* GLOBAL STYLES */
+/* //////////// */
+
 body {
     font-family: 'Roboto Mono', sans-serif;
     background: url('../assets/bg-img/bgImg.jpg');
@@ -32,27 +43,6 @@ body {
     height: 100vh;
     display: flex;
 }
-
-/* NAVBAR SECTION */
-
-.navbar-container {
-    display: flex;
-    width: 100vw;
-    top: 0;
-    position: fixed;
-    justify-content: center;
-    z-index: 100;
-}
-
-.navbar {
-    justify-content: space-evenly;
-    align-items: center;
-    width: 60%;
-    background-color: var(--black-background-color);
-    position: fixed;
-}
-
-/* THINGS :-) */
 
 h1 {
     color: var(--text-color);
@@ -86,6 +76,28 @@ p {
 }
 
 
+/* /////////////// */
+/* NAVBAR SECTION */
+/* ///////////// */
+
+
+.navbar-container {
+    display: flex;
+    width: 100vw;
+    top: 0;
+    position: fixed;
+    justify-content: center;
+    z-index: 100;
+}
+
+.navbar {
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60%;
+    background-color: var(--black-background-color);
+    position: fixed;
+}
+
 nav ul li {
     color: var(--text-color);
     cursor: pointer;
@@ -98,29 +110,10 @@ nav ul li:hover {
     color: var(--bright-text-color);
 }
 
-main {
-    display: flex;
-    position: absolute;
-    /* flex-direction: column; */
-    width: 100vw;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
-}
 
-main ul {
-    background-color: var(--black-background-color);
-    padding: 8px;
-}
-
-main ul li:hover {
-    transition: all 0.3s ease-in-out;
-    transform: scale(120%);
-}
-
-main ul li a:hover {
-    color: var(--bright-text-color)
-}
+/* /////////////// */
+/* SCREEN CONTENT */
+/* ///////////// */
 
 .screen-container {
     display: flex;
@@ -130,12 +123,9 @@ main ul li a:hover {
     align-items: center;
 }
 
-
 .screen {
-    /* top: 115px;
-    left: 120px; */
-    width: 546px;
-    height: 501px;
+    width: 650px;
+    height: 550px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -149,31 +139,83 @@ main ul li a:hover {
 .screen-content {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100%;
     z-index: 2;
 }
 
+.screen-content ul {
+    background-color: var(--black-background-color);
+    padding: 8px;
+}
+
+.screen-content ul li:hover {
+    transition: all 0.3s ease-in-out;
+    transform: scale(120%);
+}
+
+.screen-content ul li a:hover {
+    color: var(--bright-text-color)
+}
+
+
+/* ////////////////////////// */
+/* VIDEO IN SCREEN CONTAINER */
+/* //////////////////////// */
+
 #video {
-    width: 545px;
-    height: 500px;
+    width: 649px;
+    height: 549px;
     object-fit: cover;
     position: fixed;
     z-index: -1;
     border-radius: 15px;
 }
 
-.wb-body {
-    background: var(--black-color);
-    color: var(--text-color);
-    padding: 20px;
-    z-index: 99;
+/* ////////////// */
+/* ABOUT SECTION */
+/* //////////// */
+
+.profile-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    margin-top: 30px;
 }
 
-.links:hover {
-    color: var(--bright-text-color);
+#my-img {
+    border-radius: 10%;
+    width: 30%;
+    border: 1.5px dashed var(--bright-text-color);
 }
 
+.social-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socialLogo {
+    max-height: 2rem;
+    transition: transform 0.5s ease-in-out;
+    /* background-color: var(--text-color); */
+    /* border: 2px solid black; */
+    opacity: 0.5;
+    margin: 0 10px;
+}
+
+.socialLogo:hover {
+    transform: scale(-1, 1) scale(1);
+}
+
+
+/* //////////////// */
+/* PROJECT SECTION */
+/* ////////////// */
 
 .projects-list {
     display: flex;
@@ -198,6 +240,22 @@ main ul li a:hover {
     height: 200px;
 }
 
+
+/* /////////////// */
+/* WINBOX STYLING */
+/* ///////////// */
+
+.wb-body {
+    background: var(--black-color);
+    color: var(--text-color);
+    padding: 20px;
+    z-index: 99;
+}
+
+.links:hover {
+    color: var(--bright-text-color);
+}
+
 .hidden {
     display: none;
 }
@@ -216,23 +274,11 @@ main ul li a:hover {
     margin-top: 650px;
 } */
 
-.profile-img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width:100%;
-    position: relative;
-    margin-top: 30px;
-}
 
-#my-img {
-    border-radius: 10%;
-    width: 30%;
-    border: 1.5px dashed var(--bright-text-color);
-}
+/* /////////////// */
+/* FOOTER SECTION */
+/* /////////////// */
 
-
-/* Footer Content */
 .footer-container {
     display: flex;
     position: fixed;
@@ -251,26 +297,6 @@ main ul li a:hover {
     color: var(--bright-text-color);
 }
 
-.social-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.socialLogo {
-    max-height: 2rem;
-    transition: transform 0.5s ease-in-out;
-    background-color: black !important;
-    border: 2px solid black;
-    opacity: 0.5;
-}
-
-.socialLogo:hover {
-    transform: scale(-1, 1) scale(1);
-}
-
-
-
 @keyframes blink {
 
     from,
@@ -281,4 +307,60 @@ main ul li a:hover {
     50% {
         color: var(--text-color);
     }
+}
+
+
+/* ////////////// */
+/* MEDIA QUERIES */
+/* //////////// */
+
+
+@media screen and (max-width: 280px) {
+    .screen {
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .screen-content {
+        font-size: 10px;
+        transform: scale(90%);
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .screen {
+        transform: scale(90%);
+    }
+}
+
+@media screen and (max-width: 540px) {
+    #video {
+        display: none;
+    }
+
+    .screen-container {
+        transform: scaleX(80%);
+    }
+
+    .screen-content {
+        font-size: 20px;
+    }
+
+    .navbar {
+        width: 100vw;
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .screen-container {
+        transform: scale(80%);
+    }
+
+
+
 }
