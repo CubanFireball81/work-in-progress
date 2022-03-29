@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap');
 
 
-
 /* /////////////////////// */
 /* GLOBAL VARIABLES */
 /* ///////////////////// */
@@ -23,6 +22,27 @@
     --bright-text-color: #00ff00;
     --dull-black-color: rgba(0, 0, 0, 0.75);
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
 
 /* ////////// */
 /* PRELOADER */
@@ -130,7 +150,7 @@
     }
 }
 
-/*hiding all*/
+/* HIDES ALL PRELOADER */
 .preloaded .loader_line:after {
     opacity: 0;
 }
@@ -156,8 +176,6 @@
         width: 0%;
     }
 }
-
-
 
 
 /* ////////////// */
@@ -215,7 +233,6 @@ p {
 /* NAVBAR SECTION */
 /* ///////////// */
 
-
 .navbar-container {
     display: flex;
     width: 100vw;
@@ -239,7 +256,7 @@ nav ul li {
     margin: 0 10px;
 }
 
-nav ul li:hover {
+nav ul li:hover, nav ul li a:hover {
     transition: all 0.3s ease-in-out;
     transform: scale(110%);
     color: var(--bright-text-color);
@@ -308,6 +325,7 @@ nav ul li:hover {
     z-index: -1;
     border-radius: 15px;
 }
+
 
 /* ////////////// */
 /* ABOUT SECTION */
@@ -414,7 +432,14 @@ nav ul li:hover {
 /*////////////////////// */
 
 
+/* ////////////// */
+/* VIDEO SECTION */
+/* //////////// */
 
+
+.myVideo iframe {
+    max-width: 90%;
+}
 
 /* /////////////// */
 /* WINBOX STYLING */

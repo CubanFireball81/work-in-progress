@@ -36,7 +36,7 @@ about.addEventListener('click', () => {
 projects.addEventListener('click', () => {
     const projectsBox = new WinBox({
         title: 'My Projects',
-        width: '800px',
+        width: '1000px',
         height: '600px',
         x: "center",
         y: "center",
