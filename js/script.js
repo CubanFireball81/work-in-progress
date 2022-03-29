@@ -1,23 +1,23 @@
 const about = document.querySelector('#about')
 const projects = document.querySelector('#projects')
 const certifications = document.querySelector('#certifications')
-const contact = document.querySelector('#contact')
+const MyIntro = document.querySelector('#MyIntro')
 
 
 const aboutContent = document.querySelector('#about-content')
 const projectsContent = document.querySelector('#projects-content')
 const certificationsContent = document.querySelector('#certifications-content')
-const contactContent = document.querySelector('#contact-content')
+const MyIntroContent = document.querySelector('#MyIntro-content')
 
 // About Me window
 about.addEventListener('click', () => {
     const aboutBox = new WinBox({
         title: 'About Me',
         // modal: true,
-        width: '615px',
-        height: '525px',
-        x: "50",
-        y: "70",
+        width: '800px',
+        height: '600px',
+        x: "center",
+        y: "center",
         top: 55,
         right: 20,
         bottom: 20,
@@ -37,9 +37,9 @@ projects.addEventListener('click', () => {
     const projectsBox = new WinBox({
         title: 'My Projects',
         width: '800px',
-        height: '550px',
-        x: "200",
-        y: "170",
+        height: '600px',
+        x: "center",
+        y: "center",
         top: 55,
         right: 20,
         bottom: 20,
@@ -58,10 +58,10 @@ projects.addEventListener('click', () => {
 certifications.addEventListener('click', () => {
     const certificationsBox = new WinBox({
         title: 'My Certifications',
-        width: '400px',
-        height: '400px',
-        x: "350",
-        y: "270",
+        width: '650px',
+        height: '600px',
+        x: "center",
+        y: "center",
         top: 55,
         right: 20,
         bottom: 20,
@@ -77,18 +77,18 @@ certifications.addEventListener('click', () => {
 })
 
 // Contact Me window
-contact.addEventListener('click', () => {
-    const contactBox = new WinBox({
-        title: 'Contact Me',
-        width: '400px',
-        height: '400px',
-        x: "1000",
-        y: "50",
+MyIntro.addEventListener('click', () => {
+    const MyIntroBox = new WinBox({
+        title: 'My Intro Video',
+        width: '800px',
+        height: '600px',
+        x: "center",
+        y: "center",
         top: 55,
         right: 20,
         bottom: 20,
         left: 20,
-        mount: contactContent,
+        mount: MyIntroContent,
         onfocus: function () {
             this.setBackground('#00aa00')
         },
@@ -97,3 +97,38 @@ contact.addEventListener('click', () => {
         },
     })
 })
+
+// PRELOADER Script
+
+function my_preloader() {
+    "use strict";
+
+    var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
+    var preloader = $('#preloader');
+
+    if (!isMobile) {
+        setTimeout(function () {
+            preloader.addClass('preloaded');
+        }, 800);
+        setTimeout(function () {
+            preloader.remove();
+        }, 2000);
+
+    } else {
+        preloader.remove();
+    }
+}
+
+
+function load_page() {
+    "use strict";
+
+    var speed = 500;
+    setTimeout(function () { my_preloader(); }, speed);
+}
+
+jQuery(document).ready(function () {
+    jQuery(window).load('body', function () {
+        load_page();
+    });
+});
